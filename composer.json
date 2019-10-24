@@ -1,0 +1,25 @@
+{
+    "name": "phi/vue-php",
+    "description": "Vue-PHP bridge",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niko Hujanen",
+            "email": "niko.hujanen@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Phi\\VuePHP\\": "src/"
+        }
+    },
+    "require": {
+        "voku/html-min": "^4.0",
+        "matthiasmullie/minify": "^1.3",
+        "scssphp/scssphp": "^1.0"
+    }
+}
