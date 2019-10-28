@@ -143,7 +143,9 @@ EOF;
                 </p>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="index.js"></script>
+        <script>var app = new Vue({el: '#app', data: { page: null }, created() { fetch('api.json').then(r => r.json()).then(d => { this.page = d.page; }) }});</script>
     </body>
 </html>
 EOF;

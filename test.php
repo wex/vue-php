@@ -13,7 +13,6 @@ $index->with(function() {
     $this->add( new CSS('app.css') );
     $this->add( new SCSS('app.scss') );
     $this->add( new JS('app.js') );
-    $this->add( new JS('foo.js') );
 });
 
 $layout = new Layout('public', 'test');
